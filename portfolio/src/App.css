@@ -1,0 +1,99 @@
+.navbar {
+ padding: 0;
+ margin: 0;
+ height: 60px;
+ background-color: black;
+ /* position: sticky; */
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+  max-width: 1800px; /* Fix this when test at 2500px */
+}
+
+.logoContainer {
+  color: #fff;
+  width: 75px;
+}
+
+.navbar .nav-wrapper .nav-links {
+  margin-left: 65%;
+  width: 100%;
+}
+
+.hamburger-react {
+  display: none;
+}
+
+.navbar .nav-wrapper .nav-links ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navbar .nav-wrapper .nav-links ul li {
+  list-style: none;
+}
+
+
+.navbar .nav-wrapper .nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar .nav-wrapper .nav-links {
+    display: none;
+  }
+  .hamburger-react {
+    display: block;
+  }
+}
+
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
