@@ -1,8 +1,43 @@
 body {
   margin: 0;
+  margin-top: 0;
   padding: 0;
   background-color: lightgray;
   height: auto;
+}
+
+.intro-wrapper {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-wrapper .intro-text {
+  height: 600px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-wrapper .intro-text .intro-header {
+  margin: 25px 15%;
+  color: black;
+  font-size: 32px;
+}
+
+.intro-wrapper .intro-text p {
+  margin: 25px 15%;
+  color: black;
+}
+.intro-wrapper .intro-text .intro-sub-container {
+  margin-left: 15%;
+}
+
+.intro-wrapper .intro-graphic {
+  background-color: darkolivegreen;
+  height: 600px;
+  width: 55%;
 }
 
 /* .App {
