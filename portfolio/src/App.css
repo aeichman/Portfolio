@@ -1,95 +1,9 @@
-.navbar {
- padding: 0;
- margin: 0;
- height: 60px;
- background-color: black;
- /* position: sticky; */
-}
-
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin-left: 5%;
-  height: 100%;
-  max-width: 1800px; /* Fix this when test at 2500px */
-}
-
-.logoContainer {
-  color: #fff;
-  width: 75px;
-}
-
-.navbar .nav-wrapper .nav-links {
-  margin-left: 65%;
-  width: 100%;
-}
-
-.hamburger-react {
-  display: block;
-}
-
-.navbar .nav-wrapper .nav-links ul {
-  padding: 0;
+body {
   margin: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.navbar .nav-wrapper .nav-links ul li {
-  list-style: none;
-}
-
-
-.navbar .nav-wrapper .nav-links ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.sidebar {
-  margin-top: 60px;
-  display: block;    
-  background-color: gray;
-  position: fixed;
-  top: 0;
-  right: -100px; /* Start off-screen */
-  width: 300px;
-  height: 100vh;
-  background-color: #f2f2f2;
-  padding: 20px;
-  transition: transform 0.3s ease-in-out;
-  z-index: 10;
-}
-
-.sidebar ul {
-  list-style: none;
   padding: 0;
-  margin: 0;
+  background-color: lightgray;
+  height: auto;
 }
-
-.sidebar ul li {
-  margin-bottom: 10px;
-}
-
-.sidebar ul li a {
-  color: #333;
-  text-decoration: none;
-}
-
-.nav-links.open + .hamburger {
-  /* Move hamburger icon to the left to make room for the sidebar */
-  transform: translateX(300px);
-}
-
-.nav-links.open + .sidebar {
-  /* Slide in the sidebar */
-  transform: translateX(0);
-}
-
-
-
 
 /* .App {
   text-align: center;
