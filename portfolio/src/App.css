@@ -71,7 +71,7 @@ body {
 }
 
 .skills-wrapper .skills-container {
-  height: 200px;
+  height: auto;
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
   border-radius: 2px;
@@ -83,16 +83,23 @@ body {
 }
 
 .skills-wrapper .skills-container .skills-logos {
-  height: 150px;
+  height: auto;
   margin: 25px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .skills-wrapper .skills-container .skills-logos .logo-container {
   padding: 2%;
-  font-size: 7vw;
+  font-size: 96px;
+}
+
+.skills-wrapper .skills-container .skills-logos .logo-container .logo-text {
+  font-size: 16px;
+  margin-top: -15px;
+  text-align: center;
 }
 
