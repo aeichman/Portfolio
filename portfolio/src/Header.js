@@ -2,7 +2,7 @@ import './App.css';
 import { TypeAnimation } from 'react-type-animation';
 
 
-const Body = () => {
+const Header = () => {
     return (
         <div className='intro-wrapper'>
             <div className='intro-text'>
@@ -26,4 +26,4 @@ const Body = () => {
       )
 }
   
-export default Body;
+export default Header;
