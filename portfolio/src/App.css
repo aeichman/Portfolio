@@ -21,7 +21,7 @@ body {
 }
 
 .intro-wrapper .intro-text .intro-header {
-  margin: 25px 15%;
+  margin: 25px 0;
   color: black;
   font-size: 32px;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .intro-wrapper .intro-graphic {
-  background-color: darkolivegreen;
+  background-color: #556b2f;
   height: 600px;
   width: 55%;
 }
