@@ -1,14 +1,18 @@
 import { BrowserRouter } from 'react-router-dom'
 import Navbar from './Navbar'
-import Body from './Body'
+import Header from './Header'
+import About from './About';
 import './App.css';
+import Skills from './Skills';
 
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Body />
+      <Header />
+      <About />
+      <Skills />
     </BrowserRouter>
   );
 }
