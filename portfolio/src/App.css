@@ -30,9 +30,33 @@ body {
   margin: 25px 15%;
   color: black;
 }
+
 .intro-wrapper .intro-text .intro-sub-container {
   margin-left: 15%;
 }
+
+.intro-wrapper .header-icons {
+  margin-left: 15%;
+  font-size: 26px;
+}
+
+.intro-wrapper .header-icons .github-header,
+.intro-wrapper .header-icons .linkedin-header {
+  margin-right: 5px;
+  color: black;
+}
+
+.intro-wrapper .header-icons .github-header:hover {
+  transition: color .5s ease;
+  color: #6CC644;
+
+}
+
+.intro-wrapper .header-icons .linkedin-header:hover {
+  transition: color .5s ease;
+  color: #0e76a8;
+}
+
 
 .intro-wrapper .intro-graphic {
   /* background-color: #556b2f; */
@@ -107,9 +131,9 @@ body {
 
 .proj-wrapper {
   height: 700px;
-  width: 90%;
+  width: 100%;
   margin: 25px auto;
-  background-color: antiquewhite;
+  background-color: #d5c1ba;
 }
 
 .proj-wrapper h5 {
@@ -175,11 +199,11 @@ body {
 .proj-wrapper .proj-container .project-box:hover .proj-title,
 .proj-wrapper .proj-container .project-box:hover .project-img:hover + .proj-title {
   opacity: 1;
-  -webkit-transition: opacity 1s ease;
-  -moz-transition: opacity 1s ease;
-  -o-transition: opacity 1s ease;
-  -ms-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  -webkit-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+  -o-transition: opacity .5s ease;
+  -ms-transition: opacity .5s ease;
+  transition: opacity .5s ease;
   -webkit-filter: brightness(100%);
 
 }
@@ -194,3 +218,36 @@ body {
   color: white;
   margin-right: 5px;
 }
+
+.footer-wrapper {
+  height: 60px;
+  background-color: lightgray;
+}
+
+.footer-wrapper .footer-icons {
+  width: 100px;
+  margin: auto;
+  font-size: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper .footer-icons a {
+  color: black;
+}
+
+.footer-wrapper .footer-icons .github-icon:hover {
+  transition: color .5s ease;
+  color: #6CC644;
+
+}
+
+.footer-wrapper .footer-icons .linkedin-icon:hover {
+  transition: color .5s ease;
+  color: #0e76a8;
+}
+
+
+
+
+
