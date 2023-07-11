@@ -35,7 +35,8 @@ body {
 }
 
 .intro-wrapper .intro-graphic {
-  background-color: #556b2f;
+  /* background-color: #556b2f; */
+  background-color: #170063;
   height: 600px;
   width: 55%;
 }
@@ -50,8 +51,9 @@ body {
 .about-wrapper .about-image {
   height: 500px;
   width: 60%;
-  background-color: antiquewhite;
-  box-shadow: 0px 0px 5px gray;
+  /* background-color: antiquewhite; */
+  background-color: #3a1c9c;
+  box-shadow: 0px 0px 2.5px #3a1c9c;
 }
 
 .about-wrapper .about-text {
@@ -129,13 +131,66 @@ body {
 .proj-wrapper .proj-container .project-box {
   width: 40%;
   height: 100%;
-  background-color: #556b2f;
+  background-color: white;
   margin: 15px;
   box-shadow: 0px 0px 5px gray;
+}
+
+.proj-wrapper .proj-container .project-box {
+  -webkit-filter: brightness(100%);
+}
+
+.proj-wrapper .proj-container .project-box:hover > .project-img {
+  filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .proj-wrapper .proj-container .project-box .project-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.proj-wrapper .proj-container .project-box .proj-title {
+  margin: -150px 0 0 25px;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.proj-wrapper .proj-container .project-box .proj-title p {
+  font-size: 40px;
+  color: #fff;
+  margin: -200px 0 0 25px;
+}
+
+.proj-wrapper .proj-container .project-box .proj-title .proj-icons {
+  margin: 0 0 0 25px;
+}
+
+.proj-wrapper .proj-container .project-box:hover .proj-title,
+.proj-wrapper .proj-container .project-box:hover .project-img:hover + .proj-title {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  -webkit-filter: brightness(100%);
+
+}
+
+
+.proj-wrapper .proj-container .project-box:hover .proj-title {
+  margin: -150px 0 0 0;
+}
+
+.proj-wrapper .proj-container .project-box:hover .proj-title .proj-icons svg{
+  font-size: 24px;
+  color: white;
+  margin-right: 5px;
 }
