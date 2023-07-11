@@ -1,5 +1,7 @@
 import './App.css';
 import { TypeAnimation } from 'react-type-animation';
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+
 
 
 const Header = () => {
@@ -20,6 +22,15 @@ const Header = () => {
                     />
                 </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <div className='header-icons'>
+                <a href='https://github.com/aeichman' target='_blank' rel='noopener noreferrer'>
+                        <AiFillGithub className='github-header'  />
+                </a>
+                <a href='https://www.linkedin.com/in/adameichman/' target='_blank' rel='noopener noreferrer'>
+                        <AiFillLinkedin className='linkedin-header'/>
+                </a>
+            </div>
+            
             </div>
             <div className='intro-graphic'></div>
         </div>
