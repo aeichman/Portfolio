@@ -101,6 +101,7 @@
     list-style: none;
     padding: 0;
     margin: 10px 0;
+    position: sticky;
 }
 
 .sidebar ul li {
@@ -110,7 +111,7 @@
 .sidebar ul li a {
     margin-bottom: 10px;
     position: relative;
-    color: black;
+    color: #fff;
     text-decoration: none;
     opacity: 1;
     font-size: 20px;
@@ -130,10 +131,3 @@
 .sidebar ul li a:hover::after {
     width: 100%;
 }
-
-/* .nav-links.open + .sidebar {
-
-    right: 0;
-    opacity: 1;
-} */
-   

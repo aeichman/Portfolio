@@ -5,6 +5,7 @@ import './Nav.css';
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
+  
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 900) {
@@ -12,10 +13,16 @@ const Navbar = () => {
       }
     };
 
+    const handleScroll = () => {
+      setOpen(false);
+    };
+
     window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
