@@ -330,3 +330,22 @@ body {
     margin: 5px 0;
   }
 }
+
+
+@media screen and (max-width: 500px) {
+  .about-wrapper .about-text {
+    height: 400px;
+  }
+  
+  .about-wrapper .about-text p {
+    font-size: 14px;
+  }
+
+  .skills-wrapper {
+    margin: 25px 10% 60px 10%;
+  }
+
+  .skills-wrapper .skills-container .skills-logos .logo-container {
+    font-size: 75px;
+  }
+}
