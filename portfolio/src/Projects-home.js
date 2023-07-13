@@ -10,13 +10,13 @@ const Proj = () => {
             <div className='proj-container'>
                 <div className='project-box'>
                     <img className='project-img' src='/DubCalendarHome.png' />
-                        <div className='proj-title'>
-                            <p>6 DOF Robotic Arm</p>
-                            <div className='proj-icons'>
-                                <BiLogoCPlusPlus />
-                                <SiArduino />
-                            </div>
+                    <div className='proj-title'>
+                        <p>6 DOF Robotic Arm</p>
+                        <div className='proj-icons'>
+                            <BiLogoCPlusPlus />
+                            <SiArduino />
                         </div>
+                    </div>
                 </div>
                 <div className='project-box'>
                     <img className='project-img' src='/DubCalendarHome.png' />
