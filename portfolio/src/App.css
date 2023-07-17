@@ -183,6 +183,7 @@ body {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+  cursor: pointer;
 }
 
 .proj-wrapper .proj-container .project-box .project-img {
@@ -217,7 +218,7 @@ body {
   -ms-transition: opacity .5s ease;
   transition: opacity .5s ease;
   -webkit-filter: brightness(100%);
-
+  cursor: pointer;
 }
 
 .proj-wrapper .proj-container .project-box:hover .proj-title {
@@ -250,11 +251,13 @@ body {
 .footer-wrapper .footer-icons .github-icon:hover {
   transition: color .5s ease;
   color: #6CC644;
+  cursor: pointer;
 }
 
 .footer-wrapper .footer-icons .linkedin-icon:hover {
   transition: color .5s ease;
   color: #0e76a8;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
