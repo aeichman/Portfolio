@@ -7,7 +7,7 @@ const Robotarm = () => {
     return (
         <div className='project-wrapper'>
             <div className='project-header'>
-
+                <h1>Testing Testing</h1>
             </div>
         </div>
       )

@@ -172,11 +172,15 @@ body {
   box-shadow: 0px 0px 5px gray;
 }
 
+.proj-links {
+  text-decoration: none;
+}
+
 .proj-wrapper .proj-container .project-box {
   -webkit-filter: brightness(100%);
 }
 
-.proj-wrapper .proj-container .project-box:hover > .project-img {
+.proj-wrapper .proj-container .project-box:hover > a > .project-img {
   filter: brightness(50%);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
