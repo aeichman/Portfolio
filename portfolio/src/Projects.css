@@ -26,7 +26,7 @@ p {
 }
 
 .proj-parts {
-    height: 400px;
+    height: auto;
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
     border-radius: 2px;
@@ -38,7 +38,7 @@ h5 {
 }
 
 .proj-parts .parts {
-    padding: 0 25px;
+    padding: 0 25px 25px 0;
 }
 
 .proj-parts .parts ul {
@@ -91,12 +91,11 @@ h5 {
 }
 
 .one-col {
-    height: 350px;
+    height: auto;
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
     border-radius: 1px;
     padding: 50px auto;
-    /* width: 90%; */
 }
 
 .one-col h5 {
@@ -112,4 +111,48 @@ h5 {
     margin: 0 25px;
 }
 
+@media screen and (max-width: 1100px) {
+    .two-col {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .two-col .col {
+        padding: 0 0 15px 0;
+    }
+
+    .two-col .col .image1 {
+        margin: 0 0 15px 0;
+    }
+
+    .two-col .col p {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .multi-row .two-col .col {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .multi-row .two-col .col .image1 {
+        margin: 25px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .proj-parts .parts ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .proj-parts .parts ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
+}

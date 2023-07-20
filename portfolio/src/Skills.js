@@ -17,7 +17,7 @@ const Skills = () => {
                             <BiLogoJava />
                             <p className='logo-text'>Java</p>
                         </div>
-                        <div className='logo-container'>
+                        <div className='logo-container-js'>
                             <BiLogoJavascript />
                             <p className='logo-text'>JavaScript</p>
                         </div>

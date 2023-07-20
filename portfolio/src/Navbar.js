@@ -50,7 +50,7 @@ const Navbar = () => {
             <li><NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink></li>
             <li><NavLink to="#" onClick={() => scrollToSection('.about-wrapper')}>About</NavLink></li>
             <li><NavLink to="#" onClick={() => scrollToSection('.proj-wrapper')}>Projects</NavLink></li>
-            <li><NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink></li>
+            <li><NavLink to="/" onClick={() => setOpen(false)}>Resume</NavLink></li>
           </ul>
         </div>
         )}

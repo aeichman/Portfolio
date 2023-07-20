@@ -135,7 +135,22 @@ body {
   font-size: 100px;
 }
 
+.skills-wrapper .skills-container .skills-logos .logo-container-js {
+  padding: 2%;
+  font-size: 100px;
+}
+
+.logo-container-js svg {
+  margin-left: 15px;
+}
+
 .skills-wrapper .skills-container .skills-logos .logo-container .logo-text {
+  font-size: 16px;
+  margin-top: -15px;
+  text-align: center;
+}
+
+.skills-wrapper .skills-container .skills-logos .logo-container-js .logo-text {
   font-size: 16px;
   margin-top: -15px;
   text-align: center;
@@ -210,7 +225,7 @@ body {
 }
 
 .proj-wrapper .proj-container .project-box .proj-title .proj-icons {
-  margin: 0 0 0 25px;
+  margin: 10px 0 0 25px;
 }
 
 .proj-wrapper .proj-container .project-box:hover .proj-title,
