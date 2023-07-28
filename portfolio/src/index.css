@@ -11,3 +11,97 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header-wrap {
+  height: 400px;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-wrap .header-text {
+  margin-left: -35px;
+}
+
+.header-wrap .header-text p {
+  font-size: 64px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 5px;
+}
+
+
+.name1 {
+  /* color: #0e272e; */
+  color: black;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1; /* Initially set opacity to 1 */
+  transition: opacity 1s ease; /* Transition the opacity change */
+  z-index: 5;
+}
+
+.name2 {
+  color: #043a64;
+  margin-top: -35px;
+  opacity: .25;
+  position: relative;
+  top: -50px; /* Initially move name2 above name1 */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fadeInSlideDown 1s ease forwards; /* Use the defined animation */
+  z-index: 4;
+}
+
+.name3 {
+  color: #db0223;
+  margin-top: -35px;
+  position: relative;
+  top: -50x; /* Initially move name3 above name1 */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fadeInSlideDown 1s ease 0.2s forwards; /* Delay the animation for name3 */
+  z-index: 3;
+}
+
+.name4 {
+  color: #fa5c14;
+  margin-top: -35px;
+  position: relative;
+  top: -50px; /* Initially move name4 above name1 */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fadeInSlideDown 1s ease 0.4s forwards; /* Delay the animation for name4 */
+  z-index: 2;
+}
+
+.name5 {
+  color: #fbc23e;
+  margin-top: -35px;
+  position: relative;
+  top: -50px; /* Initially move name5 above name1 */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fadeInSlideDown 1s ease 0.6s forwards; /* Delay the animation for name5 */
+  z-index: 1;
+}
+
+/* Define the fadeInSlideDown animation */
+@keyframes fadeInSlideDown {
+  0% {
+    top: -50px; /* Start above name1 */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    top: 0; /* Slide down to its position */
+    opacity: .25; /* Fade in to full opacity */
+  }
+}
+

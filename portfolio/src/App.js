@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Header from './Header';
+import HeaderU from './HeaderU';
 import About from './About';
 import Proj from './Projects-home';
 import Footer from './Footer';
@@ -11,10 +11,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Header />
-      <About />
+      {/* <Header /> */}
+      <HeaderU />
+      {/* <About />
       <Skills />
-      <Proj />
+      <Proj /> */}
       <Footer />
     </>
   );
