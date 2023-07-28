@@ -78,8 +78,6 @@ const Robotarm = () => {
                         <p>Curabitur et nunc nisi. Suspendisse laoreet purus lobortis nunc vestibulum, at aliquet tortor pretium. Nunc placerat, arcu vel porttitor pretium, ante nisi sagittis sem, ac iaculis libero turpis eget urna. Mauris pulvinar lorem sed facilisis sodales. Fusce nec congue ex. Sed elementum mauris non diam malesuada, et vestibulum orci sodales. Pellentesque semper varius consequat. Fusce rutrum, ligula ac lacinia posuere, ligula nisi sagittis ipsum, ac sollicitudin tellus ligula sed ligula. Maecenas nulla libero, varius et urna in, laoreet accumsan justo. Mauris et venenatis ipsum. Sed condimentum est eget metus vestibulum egestas. Vivamus luctus, elit quis bibendum dapibus, nunc dui blandit est, at feugiat mauris nisi iaculis purus. Maecenas lacinia pulvinar tristique.</p>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

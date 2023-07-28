@@ -21,7 +21,7 @@ const Proj = () => {
                     </a>
                 </div>
                 <div className='project-box'>
-                    <a className='proj-links' href='/robotarm' >
+                    <a className='proj-links' href='/dubcalendar' >
                         <img className='project-img' src='/DubCalendarHome.png' />
                         <div className='proj-title'>
                             <p>DubCalendar</p>
