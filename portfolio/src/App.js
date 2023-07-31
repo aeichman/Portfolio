@@ -4,8 +4,9 @@ import HeaderU from './HeaderU';
 import './App.css';
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
-import {CgMenuRight} from "react-icons/cg";
+import {CgMenuRight, CgClose} from "react-icons/cg";
 import { useState, useEffect } from 'react';
+import Hamburger from 'hamburger-react';
 
 
 function App() {
@@ -34,7 +35,13 @@ function App() {
   return (
     <>
       <label htmlFor="active" className={`menu-btn ${isMenuVisible ? 'transparent-bg' : ''}`} onClick={handleMenuClick}>
-        <span><CgMenuRight size={30} /></span>
+        <span>
+          {isMenuVisible ? (
+            <CgClose size={30} className='menu-icon' />
+          ) : (
+            <CgMenuRight size={30} className='menu-icon' />
+          )}
+        </span>
       </label>
       <input type="checkbox" id="active" checked={isMenuVisible} readOnly />
       <div className="wrapper">
