@@ -2,6 +2,7 @@ import './Projects.css';
 import { BiLogoPython, BiLogoReact, BiLogoFlask, BiLogoCPlusPlus} from "react-icons/bi";
 import { SiArduino } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
+import transition from './transition';
 
 const Dubcalendar = () => {
     return (
@@ -16,4 +17,5 @@ const Dubcalendar = () => {
       )
 }
   
+// export default transition(Dubcalendar);
 export default Dubcalendar;

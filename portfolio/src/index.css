@@ -7,7 +7,240 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  height: auto;
+}
+
+.header-wrap {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 300px;
+}
+
+.header-wrap .header-text {
+  margin-left: -35px;
+}
+
+.header-wrap .header-text p {
+  /* font-size: 148px; */
+  font-size: 10vw;
+  font-family: DM 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5px;
+}
+
+.name1 {
+  color: black;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  transition: opacity 1s ease;
+  z-index: 5;
+}
+
+.name1:hover {
+  cursor: pointer;
+}
+
+.name2 {
+  color: #043a64;
+  margin-top: -15px;
+  opacity: .25;
+  position: relative;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: fadeInSlideDown 1s ease forwards;
+  z-index: 4;
+}
+
+.name3 {
+  color: #db0223;
+  margin-top: -15px;
+  position: relative;
+  top: -50x;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: fadeInSlideDown 1s ease 0.2s forwards;
+  z-index: 3;
+}
+
+.name4 {
+  color: #fa5c14;
+  margin-top: -15px;
+  position: relative;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: fadeInSlideDown 1s ease 0.4s forwards;
+  z-index: 2;
+}
+
+.name5 {
+  color: #fbc23e;
+  margin-top: -15px;
+  position: relative;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: fadeInSlideDown 1s ease 0.6s forwards;
+  z-index: 1;
+}
+
+
+/* Define the fadeInSlideDown animation */
+@keyframes fadeInSlideDown {
+  0% {
+    top: -45px; /* Start above name1 */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    top: 0; /* Slide down to its position */
+    opacity: .25; /* Fade in to full opacity */
+  }
+}
+
+.name1.wave,
+.name2.wave,
+.name3.wave,
+.name4.wave,
+.name5.wave {
+  animation: waveEffect 0.4s ease-in-out forwards;
+}
+
+@keyframes waveEffect {
+  0% {
+    font-size: 10vw;
+  }
+  50% {
+    font-size: 10.5vw;
+  }
+  100% {
+    font-size: 10vw;
+  }
+}
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  transform-origin: bottom;
+}
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  transform-origin: top;
+}
+
+.about-wrapper {
+  height: 100vh;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-135deg, #043a64, #db0223, #fa5c14, #fbc23e);
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.menu-wrapper.active {
+  clip-path: circle(75%);
+  opacity: 1;
+  visibility: visible;
+  z-index: 999; 
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #043a64;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.menu-btn.transparent-bg {
+  transition: all .2;
+  background-color: transparent;
+}
+
+.menu-btn span {
+  position: relative;
+  top: 9px;
+  right: 2px;
+}
+
+.menu-wrapper ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
+.menu-wrapper ul li {
+  margin: 15px 0;
+}
+
+
+.menu-wrapper ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 56px;
+  font-weight: 500;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-wrap .header-text {
+    transform: rotate(-90deg);
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .menu-btn {
+    display: none;
+  }
 }
