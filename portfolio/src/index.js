@@ -1,12 +1,24 @@
 import React from 'react';
 import { render } from 'react-dom'; // Adjust the import statement
 import AppRouter from './AppRouter';
+import App from './App'
 import './index.css';
+import './App.css'
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dubcalendar from './Dubcalendar';
+import Projects from './Projects';
+import About from './About';
 
 render(
   <React.StrictMode>
-    <AppRouter />
+    <Router>
+      <Routes>
+        <Route path="/*" element={<App />} />
+        <Route path="/about" element={<About /> } />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
