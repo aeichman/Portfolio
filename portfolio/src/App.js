@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from './Navbar';
 import HeaderU from './HeaderU';
+import About from './About';
 import './App.css';
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
 import {CgMenuRight, CgClose} from "react-icons/cg";
 import { useState, useEffect } from 'react';
-import Hamburger from 'hamburger-react';
+
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
         </div>
         <Navbar />
         <HeaderU />
+        <About />
       </div>
     </>
   );

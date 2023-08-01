@@ -1,10 +1,13 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightgray;
+  height: auto;
 }
 
 .wrapper {
@@ -169,7 +172,7 @@ input[type="checkbox"] {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(-135deg, #043a64, #db0223, #fa5c14, #fbc23e);
+  background: linear-gradient(-135deg, black, #043a64, #db0223, #fa5c14, #fbc23e);
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
   opacity: 0;
@@ -262,3 +265,13 @@ input[type="checkbox"] {
   }
 }
 
+
+.about-color-fade {
+  height: 400px;
+  background: linear-gradient(180deg, lightgray, tan);
+}
+
+.about-wrapper {
+  height: 400px;
+  background-color: tan;
+}
