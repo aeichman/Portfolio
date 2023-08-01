@@ -13,7 +13,7 @@
 .logoContainer .logo {
     width: 4vw;
     height: 4vw;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
 }
 
 .nav {
@@ -27,7 +27,7 @@
 }
 
 .nav-links {
-    margin: 25px auto;
+    margin: 30px auto 20px auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -44,7 +44,7 @@
     position: relative;
     color: #000;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin: 10px 0;
     font-size: 1.2vw;
     font-weight: 650;
 }
@@ -71,6 +71,37 @@
     transform: scaleX(1);
 }
 
+.contact-icons {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-icons .li-icon {
+    font-size: 2vw;
+    cursor: pointer;
+    color: #000;
+}
+
+
+.contact-icons .li-icon:hover {
+    transition: color .5s ease;
+    color: #0e76a8;
+}
+
+.contact-icons .gh-icon {
+    font-size: 2vw;
+    cursor: pointer;
+    color: #000;
+}
+.contact-icons .gh-icon:hover {
+    transition: color .5s ease;
+    color: #6CC644;
+}
+
+
+
+
 @media screen and (max-width: 1000px) {
     .logoContainer .logo {
         width: 50px;
@@ -85,5 +116,7 @@
     .nav .nav-links {
         display: none;
     }
-  }
+}
+
+
   

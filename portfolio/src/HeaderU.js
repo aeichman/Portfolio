@@ -39,24 +39,26 @@ const HeaderU = () => {
     nameRefs.current = nameRefs.current.slice(0, 5); // Ensure we have a maximum of 5 elements in the array
 
     const handleScroll = () => {
-      setScrollOffset(window.scrollY);
+      if (window.innerWidth > 1000) {
+        setScrollOffset(window.scrollY);
+      }
     };
+
+    if (window.innerWidth > 1000) {
+      // Apply the initial transformation if screen size is greater than 1000px
+      nameRefs.current.forEach((nameRef, index) => {
+        if (nameRef && index >= 0) {
+          const shift = (index + 1) * (scrollOffset/2.5); // Increase the shift based on the index (+1 to make name2 move)
+          nameRef.style.transform = `translateX(-50%) translateY(-${shift}px)`;
+        }
+      });
+    }
 
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
-
-  useEffect(() => {
-    // Apply the transformation based on the scrollOffset
-    nameRefs.current.forEach((nameRef, index) => {
-      if (nameRef && index >= 0) {
-        const shift = (index + 1) * scrollOffset; // Increase the shift based on the index (+1 to make name2 move)
-        nameRef.style.transform = `translateX(-50%) translateY(-${shift}px)`;
-      }
-    });
   }, [scrollOffset]);
 
   return (
@@ -87,5 +89,3 @@ const HeaderU = () => {
 };
 
 export default HeaderU;
-
-
