@@ -49,6 +49,10 @@
     font-weight: 650;
 }
 
+.nav-links a.active {
+    border-bottom: 1px solid red;
+}
+
 .nav-links a:hover {
     color: #000;
     cursor: pointer;
@@ -115,6 +119,15 @@
 
     .nav .nav-links {
         display: none;
+    }
+
+    .contact-icons {
+        width: 50px;
+    }
+
+    .contact-icons .li-icon,
+    .contact-icons .gh-icon {
+        font-size: 20px;
     }
 }
 

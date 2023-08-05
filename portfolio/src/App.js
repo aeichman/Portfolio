@@ -18,17 +18,16 @@ function App() {
   };
 
   useEffect(() => {
-    // Add a resize event listener to detect changes in the screen size
+
     const handleResize = () => {
       if (window.innerWidth > 1000) {
-        setIsMenuVisible(false); // Close the menu if screen size is greater than 1000px
+        setIsMenuVisible(false);
       }
     };
 
     window.addEventListener('resize', handleResize);
 
     return () => {
-      // Clean up the event listener when the component unmounts
       window.removeEventListener('resize', handleResize);
     };
   }, []);
